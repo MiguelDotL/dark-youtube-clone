@@ -1,7 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0 0;
-  padding: 0 0;
-  font-size: 62.5%;
   background: #d89179; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(to bottom, #d89179, #ffd5a3); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(to bottom, #d89179, #ffd5a3); /* For Opera 11.1 to 12.0 */
@@ -9,4 +12,49 @@ body {
     background: linear-gradient(to bottom, #d89179, #ffd5a3); /* Standard syntax */
     background-attachment: fixed;
     /*background-size: cover;*/
+  font-family: Montserrat, sans-serif;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
   }
+
+.wrapper {
+  background: #232324;
+  font-size: 1.6em;
+  padding: 2em;
+  margin: 6.2rem auto;
+  width: 80rem;
+  height: 200rem;
+}
+
+.title-text {
+  color: #FFF;
+}
+.content-text {
+  color: #737373;
+}
+
+.clean-list {
+  display: inline-block;
+  list-style: none;
+}
+
+header {
+  margin: 1em;
+  display: block;
+
+}
+#nav_left{
+
+}
+#title {
+  font-weight: 400;
+}
+
+#nav_search{
+
+}
+#nav_right {
+
+
+}
