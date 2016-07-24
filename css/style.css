@@ -36,6 +36,8 @@ a, a:hover, a:visited {
 
 .title-text {
   color: #FFF;
+  font-weight: 200;
+
 }
 .content-text {
   color: #737373;
@@ -187,7 +189,7 @@ input#search_bar:focus:-ms-placeholder {
     position: relative;
     top: -0.2rem;
 }
-#avatar .ye {
+#avatar #ye {
   position: relative;
     top: -0.3em;
     left: -3.85em;
@@ -225,3 +227,49 @@ input#search_bar:focus:-ms-placeholder {
   font-size: 0.8em;
   line-height: 1.8rem;
 }
+
+
+/*--------------------------------Main--------------------------------*/
+
+/*----------------Video-Box----------------*/
+
+.main {
+  margin: 2rem 4.5rem;
+
+}
+.video {
+  text-align: center;
+  background-image: url("../images/uturn_skater.jpg");
+  background-position: center top;
+  background-size: cover;
+  /*margin: auto 4.5rem;*/
+  height: 36rem;
+  width: 64rem;
+}
+
+.bottom {
+  margin: 2rem auto;
+}
+/*----------------Bottom-Left----------------*/
+.bottom-left {
+  width: 66%
+}
+
+#video_title {
+  font-size: 1.8em;
+}
+
+.video-stats {
+  margin-top: 1rem;
+}
+.video-stats .round {
+  float:left;
+}
+
+#video_avatar {
+
+
+}
+
+
+/*----------------Bottom-Right----------------*/
