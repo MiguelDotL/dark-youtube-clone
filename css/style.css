@@ -44,6 +44,11 @@ a, a:hover, a:visited {
   color: #6F6F6F;
 }
 
+.date {
+  font-size: 0.75em;
+}
+
+
 .clean-list {
   list-style: none;
 }
@@ -389,6 +394,7 @@ input#search_bar:focus:-ms-placeholder {
   text-transform: uppercase;
 
 }
+
 .description .date {
   font-size: 0.75em;
   margin: 1rem auto;
@@ -423,24 +429,109 @@ input#search_bar:focus:-ms-placeholder {
 }
 .new-comment form {
   float: right;
-  margin: 0.3rem 0 0 1rem;
-  width: 90%;
+  margin: 0.3rem 0 0 0rem;
+  width: 92%;
 
 }
 /*--------All-Comments--------*/
 .comment {
-  margin-top: 1.8rem
+  margin-top: 1.8rem;
+  /*clear:both;*/
 }
-.comment-img {
+.comment-reply {
+  margin: 1.8rem 0 0 3rem;
+  /*clear:both;*/
+}
+.comment h4 {
+  display: inline-block;
   float: left;
+  font-size: 0.9em;
+  margin: 0.5rem .2rem 0 0.5rem;
+}
+.comment .date {
+  display: inline-block;
+  float: left;
+  /*font-size: 0.8em;*/
+  margin: .8em 0 0 0.2em;
+}
+.comment-text {
+  clear: left;
+    font-size: 0.9em;
+  margin-left: 3rem;
 }
 
+.comment-img {
+  clear: left;
+  float: left;
+}
+.likes {
+
+  color: #268BEA;
+}
+
+/*--------Comment-Image-Alignment--------*/
 #bill {
   position: relative;
     top: -0.6rem;
     left: -1.35rem;
   height: auto;
   width: 5.5rem;
+}
+
+#dave {
+  position: relative;
+    top: -0.1rem;
+    left: -1.5rem;
+  height: auto;
+  width: 5.5rem;
+}
+
+.reply {
+  display: inline-block;
+  /*float: left;*/
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+#oswald {
+  position: relative;
+    top: 0rem;
+    left: -0.05rem;
+  height: auto;
+  width: 2.7rem;
+}
+
+
+#dayum {
+  position: relative;
+    top: 0rem;
+    left: -0.05rem;
+  height: auto;
+  width: 2.7rem;
+}
+#blonde {
+  position: relative;
+    top: -0.2rem;
+    left: -1.7rem;
+  height: auto;
+  width: 4.4rem;
+}
+
+
+
+#saoirse {
+  position: relative;
+    top: -0.2rem;
+    left: -0.07rem;
+  height: auto;
+  width: 2.7rem;
+}
+#hard_hat {
+  position: relative;
+    top: -0.05rem;
+    left: -0.7rem;
+  height: auto;
+  width: 4rem;
 }
 
 /*----------------Bottom-Right----------------*/
