@@ -25,6 +25,7 @@ a, a:hover, a:visited {
   text-decoration: none;
 }
 
+/*----------------Custom-Classes----------------*/
 .wrapper {
   background: #232324;
   font-size: 1.6em;
@@ -40,14 +41,16 @@ a, a:hover, a:visited {
 
 }
 .content-text {
-  color: #737373;
+  color: #6F6F6F;
 }
 
 .clean-list {
-  display: inline-block;
   list-style: none;
 }
 
+.clear-fix {
+  clear: both;
+}
 
 .round {
   display:block;
@@ -56,6 +59,14 @@ a, a:hover, a:visited {
   border-radius: 50%;
   overflow: hidden;
   /*padding:5px 4px;*/
+}
+
+.btn {
+  border: 2px solid #737373;
+  border-radius: 2rem;
+  /*color: #737373;*/
+  height: 2rem;
+  text-transform: uppercase;
 }
 
 
@@ -205,14 +216,6 @@ input#search_bar:focus:-ms-placeholder {
 .fa-cog {
 }
 
-.btn {
-  border: 2px solid #737373;
-  border-radius: 2rem;
-  /*color: #737373;*/
-  height: 2rem;
-  text-transform: uppercase;
-}
-
 .upload {
   color: #737373;
   float: left;
@@ -252,24 +255,130 @@ input#search_bar:focus:-ms-placeholder {
 }
 /*----------------Bottom-Left----------------*/
 .bottom-left {
-  width: 66%
+  width: 60%
 }
 
+/*--------Video-Title--------*/
 #video_title {
+  display: block;
   font-size: 1.8em;
 }
 
-.video-stats {
+/*--------Chanel-Info--------*/
+.channel-info {
   margin-top: 1rem;
+  width: 50%;
 }
-.video-stats .round {
+.channel-info .round {
   float:left;
 }
 
 #video_avatar {
-
-
+  float: left;
+  height: auto;
+  width: 5rem;
+  position: relative;
+    top: 0rem;
+    left: -1.4rem;
 }
 
+.channel-info h4 {
+  float:left;
+  margin: .6rem 0 0 .5rem;
+}
+.scribe {
+  float: left;
+  margin: .3rem 0 0 1rem;
+  text-align: center;
+  width: 7rem;
+}
+.scribe a, .scribe a:hover {
+  color: #737373;
+  font-size: 0.8em;
+  line-height: 1.8rem;
+}
+
+.video-stats {
+  float: right;
+  width: 50%;
+}
+.my-scribers p {
+  display: inline-block;
+  float: left;
+  font-size: 0.8em;
+  line-height: 2.5em;
+  margin: 0.4rem 0 0 4rem;
+  text-transform: uppercase;
+}
+.my-videos p {
+  display: inline-block;
+  float: right;
+  font-size: 0.8em;
+  line-height: 2.5em;
+  margin: 0.4rem 0 0 0rem;
+  text-transform: uppercase;
+  clear: right;
+}
+
+/*--------This-Video--------*/
+
+#this_video {
+  border-bottom: 1px solid #737373;
+  height: 3.3rem;
+}
+
+.options {
+  float: left;
+  display: block;
+  width: 50%;
+}
+.options li {
+  display: inline-block;
+  padding: 1rem 1rem 1rem 0rem;
+  text-transform: uppercase;
+  /*width: 100%;*/
+}
+.options li a {
+  color: #737373;
+  font-size: 0.8em;
+  /*width: 100%;*/
+  padding-bottom: 1.1rem;
+}
+
+.options li:first-child a,
+.options li a:active,
+.options li a:hover {
+  color: #FFF;
+  /*width: 100%;*/
+  border-bottom: 1px solid #FFF;
+}
+
+.options-icons {
+  float: right;
+  display: block;
+  width: 50%;
+}
+.options-icons li {
+  float: right;
+  display: inline-block;
+  padding: 1rem 0rem 1rem 1rem;
+  /*width: 100%;*/
+}
+.options-icons li a {
+  color: #737373;
+  font-size: 0.8em;
+  /*width: 100%;*/
+  padding-bottom: 1.1rem;
+}
+
+.options-icons li a:active,
+.options-icons li a:hover {
+  color: #FFF;
+}
+
+/*--------Description--------*/
+.description p {
+  display: block;
+}
 
 /*----------------Bottom-Right----------------*/
