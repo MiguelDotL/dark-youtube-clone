@@ -609,6 +609,17 @@ font-size: 1.5em;
   padding-bottom: 0.5rem;
 }
 
+.dislike-line {
+  background: #fff;
+  border-left: 3px solid #232324;
+  float: right;
+  height: 2px;
+  width: 14px;
+  position:relative;
+  bottom:-2.3rem;
+right: -3.3rem;
+}
+
 .like-btn {
 background: #151516;
 border-radius: 0.2rem;
