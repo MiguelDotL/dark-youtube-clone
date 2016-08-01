@@ -1,0 +1,275 @@
+  <div class="wrapper">
+    <header>
+      <div class="nav">
+        <div id="nav_left">
+          <h2 id="title" class="title-text">YouTube</h1>
+          <div id="bell" class="content-text"><i class="fa fa-bell" aria-hidden="true"></i></div>
+          <div id="nofos" class="title-text"><a href="#">8</a></div>
+        </div>
+        <div id="nav_search">
+          <form class="search-container">
+              <input type="text" id="search_bar" placeholder="Search">
+              <a href="#" class="search-icon"></clas><i class="fa fa-search" aria-hidden="true"></i></a>
+            </form>
+        </div>
+        <div id="nav_right">
+          <div id="avatar" class="round">
+            <%= image_tag 'profiles/ye.jpg', id: "ye" %>
+            <!-- <img id="ye" src="ye.jpg" alt="avatar image"> -->
+          </div>
+          <div id="settings" class="content-text"><i class="fa fa-cog" aria-hidden="true"></i></div>
+          <div class="btn upload"><a href="#">Upload</a></div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="video">
+          <iframe width="100%" height="100%" src="<%= @current.video_url %>" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="bottom">
+
+        <div class="bottom-left">
+          <h1 id="video_title" class=" title-text"><%= @current.title %></h1>
+          <div class="channel-info">
+            <div class="round">
+              <%= image_tag 'profiles/mike_creative.png', id: 'video_avatar' %>
+            </div>
+            <h4 class="content-text"><%= @current.user.user_name %></h4>
+            <div class="btn scribe"><a href="#">Subscribe</a></div>
+          </div>
+          <div class="video-stats">
+            <div class="my-scribers content-text"><p>92,436 Subscribers</p></div>
+            <div class="my-videos content-text"><p>7,476 Videos</p></div>
+          </div>
+          <div class="clear-fix"></div>
+          <div id="this_video">
+            <ul class="clean-list options">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Share</a></li>
+              <li><a href="#">Add To</a></li>
+            </ul>
+            <ul class="clean-list options-icons">
+              <li><a href="#"><i class="fa fa-align-left fa-rotate-270" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-flag " aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+          <div class="clear-fix"></div>
+          <div class="description">
+            <p class="title-text"><%= @current.description %>..&nbsp;
+            <!-- Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney... -->
+              <span class="content-text show-more"> Show More</span>
+            </p>
+            <p class="date content-text">Published on 10 Apr 2014</p>
+          </div>
+          <div class="comments-section">
+            <h2 class="title-text">Comments</h2>
+            <p class="content-text">147</p>
+            <div class="clear-fix"></div>
+            <div class="new-comment">
+              <div  class="round comment-img">
+                <%= image_tag 'profiles/ye.jpg', class: 'comment-img' %>
+              </div>
+              <form class="search-container">
+                <input type="text" id="search_bar" placeholder="Share your thoughts">
+              </form>
+            </div>
+            <div class="clear-fix"></div>
+            <div class="comment">
+              <div  class="round comment-img">
+                <%= image_tag 'profiles/bill.jpeg', class: 'comment-img', id: 'bill' %>
+              </div>
+                <h4 class="content-text">xxtriplex95,</h4>
+                <p class="date content-text">3 weeks ago</p>
+                <p class="title-text comment-text">exellent!!!!!!</p>
+            </div>
+            <div class="comment">
+              <div  class="round comment-img">
+                <%= image_tag 'profiles/dave.png', class: 'comment-img', id: 'dave' %>
+              </div>
+                <h4 class="content-text">Magda Kolera,</h4>
+                <p class="date content-text">4 months ago</p>
+                <p class="comment-likes">2</p>
+                <div class="like-icons">
+                  <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+                  <a href="#">&nbsp;<i class="fa fa-thumbs-up fa-rotate-180" aria-hidden="true"></i></a>
+                </div>
+                <p class="title-text comment-text">Sticks and stones they may break my bones Not to you but to God I belong. Don't have time for this drama and stuff Without you there is plenty enough....." <span class="reply content-text">&nbsp;&nbsp;Reply</span></p>
+            </div>
+            <div class="comment">
+              <div  class="round comment-img">
+                <%= image_tag 'profiles/oswald.jpg', class: 'comment-img', id: 'oswald' %>
+                <!-- <img id="oswald" src="oswald.jpg" alt="avatar image"> -->
+              </div>
+                <h4 class="content-text">Marios Pappas,</h4>
+                <p class="date content-text">4 months ago</p>
+                <p class="title-text comment-text">It is to honour out community picture with this incredible song. All Gods Love by MAD! feat Antranita.</p>
+                <div class="comment-reply">
+                  <div  class="round comment-img">
+                    <!-- <img id="daaayum" src="daaayum.jpg" alt="avatar image"> -->
+                    <%= image_tag 'profiles/daaayum.jpg', class: 'comment-img', id: 'daaayum' %>
+                  </div>
+                    <h4 class="content-text">Shira <Tenne></Tenne>,</h4>
+                    <p class="date content-text">4 months ago</p>
+                    <p class="title-text comment-text">the photo looks like lindsey lohan</p>
+                </div>
+
+            </div>
+            <div class="comment">
+              <div  class="round comment-img">
+                <%= image_tag 'profiles/blonde.jpg', class: 'comment-img', id: 'blonde' %>
+                <!-- <img id="blonde" src="blonde.jpg" alt="avatar image"> -->
+              </div>
+                <h4 class="content-text">miss Page,</h4>
+                <p class="date content-text">5 months ago</p>
+                <p class="title-text comment-text">Sticks and stone may break my bones!..</p>
+            </div>
+            <div class="comment">
+              <div  class="round comment-img">
+                <%= image_tag 'profiles/saoirse.jpg', class: 'comment-img', id: 'saoirse' %>
+                <!-- <img id="saoirse" src="saoirse.jpg" alt="avatar image"> -->
+              </div>
+                <h4 class="content-text">Ana Sandic,</h4>
+                <p class="date content-text">5 months ago</p>
+                <p class="title-text comment-text">prelepoooooooooooooo&lt;3</p>
+            </div>
+            <div class="comment">
+              <div  class="round comment-img">
+                <%= image_tag 'profiles/hard_hat.jpg', class: 'comment-img', id: 'hard_hat' %>
+                <!-- <img id="hard_hat" src="hard_hat.jpg" alt="avatar image"> -->
+              </div>
+                <h4 class="content-text">Tomek Kaleniecki,</h4>
+                <p class="date content-text">5 months ago</p>
+                <p class="title-text comment-text">Amazing...we also inclucec it in our channel!</p>
+            </div>
+            <div class="show-more-btn"><a href="#">Show More</a></div>
+
+          </div>
+        </div>
+
+        <div class="bottom-right">
+          <div id="likes">
+            <div class="like-icons">
+              <a href="#" class="up-vote"><i class="fa fa-thumbs-up up-vote" aria-hidden="true"></i></a>
+              <p class="title-text up-vote">5,189</p>
+              <div class="view-count">
+                <h1 class="likes title-text">246,997</h1>
+              </div>
+              <p class="title-text down-vote">98</p>
+              <a href="#" class="down-vote">&nbsp;<i class="fa fa-thumbs-up fa-rotate-180" aria-hidden="true"></i></a>
+              <div class="dislike-line"></div>
+              <div class="clear-fix"></div>
+            </div>
+            <!-- <progress class="likes-bar"></progress> -->
+            <div class="like-btn  up-vote">
+              <a href="#" class="content-text"><i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;Like</a>
+            </div>
+            <div class="like-btn  down-vote">
+              <a href="#" class="content-text"><i class="fa fa-thumbs-up fa-rotate-180" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="clear-fix"></div>
+          <div id="other_videos">
+
+            <% @other_videos.each do |video| %>
+              <div class="other-video">
+                <div class="ov-box">
+                  <img id="rust" src="<%= video.img_url %>" alt="">
+                </div>
+                <div class="other-video-info">
+                  <h1 class="title-text"><%= video.title %></h1>
+                  <p class="content-text">by <%= video.user.user_name %></p>
+                  <p class="content-text"><%= video.viewstring%> views</p>
+                </div>
+              </div>
+            <% end %>
+
+  <!--
+            <div class="other-video">
+              <div class="ov-box">
+                <img id="rust" src="rust.jpg" alt="">
+              </div>
+              <div class="other-video-info">
+                <h1 class="title-text">Glass Animals - Gooey (Wild Culture Remix)</h1>
+                <p class="content-text">by Three Dot House</p>
+                <p class="content-text">1,474 views</p>
+              </div>
+            </div>
+            <div class="other-video">
+              <div class="ov-box">
+                <img id="rust" src="jay.jpg" alt="">
+              </div>
+              <div class="other-video-info">
+                <h1 class="title-text">Touch &amp; Go - Gotta Have U (Original Mix)</h1>
+                <p class="content-text">by wowshift</p>
+                <p class="content-text">983,125 views</p>
+              </div>
+            </div>
+            <div class="other-video">
+              <div class="ov-box">
+                <img id="rust" src="griz.jpg" alt="">
+              </div>
+              <div class="other-video-info">
+                <h1 class="title-text">Justin T - Like I Love You (The Equalizers Remix)</h1>
+                <p class="content-text">by Deeper Than Ever</p>
+                <p class="content-text">164,468 views</p>
+              </div>
+            </div>
+            <div class="other-video">
+              <div class="ov-box">
+                <img id="rust" src="./images/videos/sunset.jpg" alt="">
+              </div>
+              <div class="other-video-info">
+                <h1 class="title-text">Nolan Feat. Amber Jolene Go Slow (Finnebasssen ...</h1>
+                <p class="content-text">by Elena Cristou</p>
+                <p class="content-text">3,422,871 views</p>
+              </div>
+            </div>
+            <div class="other-video">
+              <div class="ov-box">
+                <img id="rust" src="./images/videos/emilia.jpg" alt="">
+              </div>
+              <div class="other-video-info">
+                <h1 class="title-text">Robin Schulz - Same (Original Mix)</h1>
+                <p class="content-text">by SoundYouNeed</p>
+                <p class="content-text">56,243 views</p>
+              </div>
+            </div>
+            <div class="other-video">
+              <div class="ov-box">
+                <img id="rust" src="./images/videos/norm.jpg" alt="">
+              </div>
+              <div class="other-video-info">
+                <h1 class="title-text">Erkka - Excommunication (Original Mix)</h1>
+                <p class="content-text">by Theolopus</p>
+                <p class="content-text">191,980 views</p>
+              </div>
+            </div>
+            <div class="other-video">
+              <div class="ov-box">
+                <img id="rust" src="./images/videos/connor.jpg" alt="">
+              </div>
+              <div class="other-video-info">
+                <h1 class="title-text">Gnarls Barkley - Crazy (TEEMID &amp; Joie Tan Cover)</h1>
+                <p class="content-text">by Electro Pos&eacute;</p>
+                <p class="content-text">1,861,020 views</p>
+              </div>
+            </div>
+            <div class="other-video">
+              <div class="ov-box">
+                <img id="rust" src="./images/videos/charlie.jpg" alt="">
+              </div>
+              <div class="other-video-info">
+                <h1 class="title-text">Fabo - I cant Decide ft Angela Sheik (Flow &amp; Zeo...)</h1>
+                <p class="content-text">by Owen Royal</p>
+                <p class="content-text">5,660,887 views</p>
+              </div>
+            </div> -->
+
+          </div>
+        </div>
+        <div class="clear-fix"></div>
+
+      </div>
+    </div>
+  </div> <!-- .wrapper close -->
