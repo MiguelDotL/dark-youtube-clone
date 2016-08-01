@@ -1,0 +1,694 @@
+/*--------------------------------Defaults--------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background: #d89179; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top, #d89179 33%, #ffd5a3 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, #d89179 33%, #ffd5a3 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, #d89179 33%, #ffd5a3 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(top, #d89179 33%, #ffd5a3) 100%; /* Standard syntax */
+    /*background-attachment: fixed;*/
+    /*background-size: cover;*/
+  font-family: Montserrat, sans-serif;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover, a:visited {
+  text-decoration: none;
+}
+
+/*----------------Custom-Classes----------------*/
+.wrapper {
+  background: #232324;
+  font-size: 1.6em;
+  padding: 1em 1em 5em 1em;
+  margin: 6.2rem auto;
+  width: 75rem;
+  height: auto;
+}
+
+.title-text {
+  color: #FFF;
+  font-weight: 200;
+
+}
+.content-text {
+  color: #6F6F6F;
+}
+
+.date {
+  font-size: 0.75em;
+}
+
+
+.clean-list {
+  list-style: none;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.round {
+  display:block;
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  /*padding:5px 4px;*/
+}
+
+.btn {
+  border: 2px solid #737373;
+  border-radius: 2rem;
+  /*color: #737373;*/
+  height: 2rem;
+  text-transform: uppercase;
+}
+
+
+/*--------------------------------Header--------------------------------*/
+
+header {
+  margin: 1em;
+}
+
+.nav {
+  /*display: block;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  width: 100%
+}
+
+/*----------------Nav-Left----------------*/
+#nav_left {
+  flex: 0 1 20%;
+  /*background-color: pink;*/
+}
+#title {
+  display: inline-block;
+  float: left;
+  font-weight: 400;
+}
+
+#bell {
+  float: left;
+  padding: .5rem 0 .5rem 2rem;
+}
+#nofos {
+  float: left;
+  background: #D62423;
+  border-radius: 50%;
+  margin: .3em .6em;
+  text-align: center;
+  height: 1.4rem;
+  width: 1.4rem;
+}
+#nofos a {
+  color: #fff;
+  font-size: .8em;
+  padding: 50% 0;
+}
+
+
+/*----------------Nav-Search----------------*/
+#nav_search {
+  flex: 0 1 60%;
+  width: auto;
+  /*background-color: purple;*/
+}
+.search-container {
+  width: auto;
+}
+
+input#search_bar {
+  background: #2E2E2F;
+  margin: 0 auto;
+  width: 100%;
+  height: 2rem;
+  padding: 0 20px;
+  font-size: 0.8em;
+  border: none;
+  border-radius: .2rem;
+  outline: none;
+}
+input#search_bar:focus {
+  color: #FFF;
+  border: none;
+  color: #737373;
+  transition: 0.35s ease;
+}
+input#search_bar::-webkit-input-placeholder {
+  color: #737373;
+  font-weight: bold;
+}
+input#search_bar:focus::-webkit-input-placeholder {
+  color: #737373;
+  font-weight: bold;
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+input#search_bar:focus::-moz-placeholder {
+  color: #737373;
+  font-weight: bold;
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+input#search_bar:focus:-ms-placeholder {
+  color: #737373;
+  font-weight: bold;
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+.search-icon {
+  position: relative;
+  float: right;
+  width: 1rem;
+  height: 1rem;
+  top: -1.7rem;
+  right: 1rem;
+  font-size: 1.1em;
+}
+.search-container a i {
+  color: #737373;
+}
+.search-container a:hover i {
+  color: #FFF;
+}
+
+
+/*----------------Nav-Right----------------*/
+
+#nav_right {
+  flex: 0 1 20%;
+  float: right;
+  margin-left: 1rem;
+  /*background: teal;*/
+}
+
+#avatar {
+  float: left;
+  margin: 0 1rem 0 1rem;
+    position: relative;
+    top: -0.2rem;
+}
+#avatar #ye {
+  position: relative;
+    top: -0.3em;
+    left: -3.85em;
+  height: auto;
+  width: 10rem;
+}
+
+#settings {
+  float: left;
+  font-size: 1.2rem;
+  padding: 0.3rem 0 0.2rem 0rem;
+}
+.fa-cog {
+}
+
+.upload {
+  color: #737373;
+  float: left;
+  /*margin: .2rem auto;*/
+  margin-left: 2rem;
+  text-align: center;
+  width: 6rem;
+}
+
+.upload a, .upload a:hover {
+  color: #737373;
+  font-size: 0.8em;
+  line-height: 1.8rem;
+}
+
+
+/*--------------------------------Main--------------------------------*/
+
+/*----------------Video-Box----------------*/
+
+.main {
+  margin: 2rem 4.5rem;
+
+}
+.video {
+  text-align: center;
+  //background-image: url("../images/uturn_skater.jpg");
+  background-position: center top;
+  background-size: cover;
+  /*margin: auto 4.5rem;*/
+  height: 36rem;
+  width: 64rem;
+}
+
+.bottom {
+  margin: 2rem auto;
+}
+/*----------------Bottom-Left----------------*/
+.bottom-left {
+  float: left;
+  width: 60%;
+}
+
+/*--------Video-Title--------*/
+#video_title {
+  display: block;
+  font-size: 1.8em;
+}
+
+/*--------Chanel-Info--------*/
+.channel-info {
+  margin-top: 1rem;
+  width: 50%;
+}
+.channel-info .round {
+  float:left;
+}
+
+#video_avatar {
+  float: left;
+  height: auto;
+  width: 5rem;
+  position: relative;
+    top: 0rem;
+    left: -1.4rem;
+}
+
+.channel-info h4 {
+  float:left;
+  margin: .6rem 0 0 .5rem;
+}
+.scribe {
+  float: left;
+  margin: .3rem 0 0 1rem;
+  text-align: center;
+  width: 7rem;
+}
+.scribe a, .scribe a:hover {
+  color: #737373;
+  font-size: 0.8em;
+  line-height: 1.8rem;
+}
+
+.video-stats {
+  float: right;
+  width: 50%;
+}
+.my-scribers p {
+  display: inline-block;
+  float: left;
+  font-size: 0.8em;
+  line-height: 2.5em;
+  margin: 0.4rem 0 0 4rem;
+  text-transform: uppercase;
+}
+.my-videos p {
+  display: inline-block;
+  float: right;
+  font-size: 0.8em;
+  line-height: 2.5em;
+  margin: 0.4rem 0 0 0rem;
+  text-transform: uppercase;
+  clear: right;
+}
+
+/*--------This-Video--------*/
+
+#this_video {
+  border-bottom: 1px solid #737373;
+  height: 3.3rem;
+}
+
+.options {
+  float: left;
+  display: block;
+  width: 50%;
+}
+.options li {
+  display: inline-block;
+  padding: 1rem 1rem 1rem 0rem;
+  text-transform: uppercase;
+  /*width: 100%;*/
+}
+.options li a {
+  color: #737373;
+  font-size: 0.8em;
+  /*width: 100%;*/
+  padding-bottom: 1.1rem;
+}
+
+.options li:first-child a,
+.options li a:active,
+.options li a:hover {
+  color: #FFF;
+  /*width: 100%;*/
+  border-bottom: 1px solid #FFF;
+}
+
+.options-icons {
+  float: right;
+  display: block;
+  width: 50%;
+}
+.options-icons li {
+  float: right;
+  display: inline-block;
+  padding: 1rem 0rem 1rem 1rem;
+  /*width: 100%;*/
+}
+.options-icons li a {
+  color: #737373;
+  font-size: 0.8em;
+  /*width: 100%;*/
+  padding-bottom: 1.1rem;
+}
+
+.options-icons li a:active,
+.options-icons li a:hover {
+  color: #FFF;
+}
+
+/*--------Description--------*/
+.description p {
+  display: block;
+  font-size: .9em;
+  font-weight: lighter;
+  margin: 1.4rem auto 0rem auto;
+  line-height: 1.4rem;
+}
+.show-more {
+  font-size: 0.8em;
+  text-transform: uppercase;
+
+}
+
+.description .date {
+  font-size: 0.75em;
+  margin: 1rem auto;
+}
+
+/*--------Comments--------*/
+
+.comments-section h2 {
+  display: block;
+  float: left;
+}
+.comments-section > p {
+  display: block;
+  float: left;
+  font-size: 0.8em;
+  margin: .8em 0 0 0.8em;
+}
+
+/*--------New-Comment--------*/
+.new-comment {
+  margin-top: 1.8rem
+}
+.new-comment .comment-img {
+  float: left;
+}
+.new-comment img {
+  position: relative;
+    top: -0.3em;
+    left: -3.85em;
+  height: auto;
+  width: 10rem;
+}
+.new-comment form {
+  float: right;
+  margin: 0.3rem 0 0 0rem;
+  width: 92%;
+}
+
+/*--------All-Comments--------*/
+.comment {
+  margin-top: 1.8rem;
+  /*clear:both;*/
+}
+.comment-reply {
+  margin: 1.8rem 0 0 3rem;
+  /*clear:both;*/
+}
+.comment h4 {
+  display: inline-block;
+  float: left;
+  font-size: 0.9em;
+  margin: 0.5rem .2rem 0 0.5rem;
+}
+.comment .date {
+  display: inline-block;
+  float: left;
+  /*font-size: 0.8em;*/
+  margin: .8em 0 0 0.2em;
+}
+.comment-text {
+  clear: left;
+    font-size: 0.9em;
+  margin-left: 3rem;
+}
+
+.comment-img {
+  clear: left;
+  float: left;
+}
+.comment-likes {
+  color: #268BEA;
+  float: left;
+  font-size: 0.75em;
+  margin: 0.6rem .5rem;
+
+}
+.like-icons a i {
+  color: #737373;
+  font-size: 1em;
+  margin-top: 0.5rem;
+}
+
+.like-icons li a:active,
+.like-icons li a:hover {
+  color: #FFF;
+}
+
+/*--------Comment-Image-Alignment--------*/
+#bill {
+  position: relative;
+    top: -0.6rem;
+    left: -1.35rem;
+  height: auto;
+  width: 5.5rem;
+}
+
+#dave {
+  position: relative;
+    top: -0.1rem;
+    left: -1.5rem;
+  height: auto;
+  width: 5.5rem;
+}
+
+.reply {
+  display: inline-block;
+  /*float: left;*/
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+#oswald {
+  position: relative;
+    top: 0rem;
+    left: -0.05rem;
+  height: auto;
+  width: 2.7rem;
+}
+
+
+#daaayum {
+  position: relative;
+    top: 0rem;
+    left: -1rem;
+  height: auto;
+  width: 4.5rem;
+}
+#blonde {
+  position: relative;
+    top: -0.2rem;
+    left: -1.7rem;
+  height: auto;
+  width: 4.4rem;
+}
+
+#saoirse {
+  position: relative;
+    top: -0.2rem;
+    left: -0.07rem;
+  height: auto;
+  width: 2.7rem;
+}
+#hard_hat {
+  position: relative;
+    top: -0.05rem;
+    left: -0.7rem;
+  height: auto;
+  width: 4rem;
+}
+
+.show-more-btn {
+  background: #2E2E2F;
+  border: none;
+  border-radius: .2rem;
+  height: 2.2rem;
+  margin: 3rem auto;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+.show-more-btn a,
+.show-more-btn a:visited {
+  color: #737373;
+  font-size: 0.8em;
+  line-height: 2.2rem;
+}
+
+.show-more-btn a:hover {
+  color: #FFF;
+
+}
+/*----------------Bottom-Right----------------*/
+.bottom-right {
+  float: left;
+  width: 33.5%;
+  margin-left: 4rem;
+  /*clear: right;*/
+}
+
+#likes {
+
+}
+#likes .like-icons a i {
+color: #FFF;
+}
+
+#likes .up-vote {
+float:left;
+}
+#likes .like-icons p.up-vote,
+#likes .like-icons p.down-vote  {
+margin: 0.5rem 0 0 0.8rem;
+}
+#likes .down-vote {
+  float:right;
+}
+
+.view-count {
+  float: left;
+  margin: 0 0 0 4rem;
+}
+
+.view-count h1 {
+/*float:left;*/
+font-size: 1.5em;
+}
+
+#likes .like-icons {
+  border-bottom: 2px solid #1882E5;
+  padding-bottom: 0.5rem;
+}
+
+.dislike-line {
+  background: #fff;
+  border-left: 3px solid #232324;
+  float: right;
+  height: 2px;
+  width: 14px;
+  position:relative;
+  bottom:-2.3rem;
+right: -3.3rem;
+}
+
+.like-btn {
+background: #151516;
+border-radius: 0.2rem;
+line-height: 2.2rem;
+margin-top: 1rem;
+height: 2.2rem;
+width: 49.3%;
+text-align: center;
+}
+
+.like-btn a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.like-btn a {
+  color: #fff;
+}
+
+#other_videos {
+  padding: 3.4rem 0 0 0;
+
+}
+
+.other-video {
+  padding: 0 0 6rem 0;
+}
+
+.other-video .ov-box {
+  border-radius: .2rem;
+  float: left;
+  height: 4.8rem;
+  width: 7.5rem;
+  overflow: hidden;
+}
+
+.other-video-info{
+  float: left;
+  margin-left: 0.8rem;
+  width: 60%;
+  position: relative;
+  top: -0.2rem;
+}
+.other-video h1 {
+  /*word-wrap: break-word;*/
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+.other-video-info h1 a {
+  color: #FFF;
+  &:visited {
+    color: #FFF;
+  }
+  &:hover {
+    color: #1882E5;
+  }
+}
+.other-video p {
+  font-size: 0.75em;
+  line-height: 1.7em;
+}
+
+
+
+#rust {
+  width: 9rem;
+  position:relative;
+  top: -0.1rem;
+  left: -0.9rem
+
+
+}

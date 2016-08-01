@@ -177,7 +177,8 @@
                   <img id="rust" src="<%= video.img_url %>" alt="">
                 </div>
                 <div class="other-video-info">
-                  <h1 class="title-text"><%= video.title %></h1>
+                  <!-- <h1 class="title-text"><%= video.title %></h1> -->
+                  <h1 class="title-text"><%= link_to video.title, video_path(video) %></h1>
                   <p class="content-text">by <%= video.user.user_name %></p>
                   <p class="content-text"><%= video.viewstring%> views</p>
                 </div>

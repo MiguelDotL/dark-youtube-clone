@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   root 'home#index'
 
   # get 'videos/index'
-  get '/videos/:id' => 'videos#show'
+  get '/videos/:id' => 'videos#show', as: 'video'
 end
